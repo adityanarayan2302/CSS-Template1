@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 /* defining media query for devices larger than 480 px */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   li {
     display: inline;
     float: left;
@@ -18,6 +18,9 @@
     padding: 10px;
     color: rgb(255, 255, 255);
   }
+  #body_div{
+    display: flex;
+}
 
   #left_div{
     flex-basis: 70%;
@@ -52,9 +55,6 @@ li a:hover {
 }
 
 /* positioning body left and right part */
-#body_div{
-    display: flex;
-}
 #left_div{
     padding: 40px;
 }
@@ -63,4 +63,32 @@ li a:hover {
     padding-top: 40px;
     padding-right: 20px;
     padding-left: 20px;
+}
+
+/* styling the footer of website */
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(190, 190, 190);
+    position: relative;
+}
+#footer_text{
+    float: right;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+/* defining media query for devices smaller than 480 px */
+@media screen and (max-width: 480px){
+    #footer_text{
+        font-size: x-small;
+    }
+      /* making the list as a vertical navigation bar */
+      li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
 }
