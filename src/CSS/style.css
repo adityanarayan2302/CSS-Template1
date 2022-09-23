@@ -1,0 +1,49 @@
+/* predefining all margins and padding to 0 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  position: relative;
+}
+
+/* defining media query for devices larger than 480 px */
+@media screen and (min-width: 480px) {
+  li {
+    display: inline;
+    float: left;
+    border-right: 1px solid rgb(255, 255, 255);
+  }
+  /* making the list as a horizontal navigation bar */
+  li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+}
+#Site-name {
+  background-color: rgb(190, 190, 190);
+  padding: 20px;
+}
+#navbar {
+  background-color: rgb(75, 75, 75);
+}
+ul {
+  /* defining structure for unordered list  */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(37, 37, 37);
+}
+
+li a:hover {
+  /* adding hover effect on navigation bar items */
+  background-color: rgb(0, 0, 0);
+}
+
+.active {
+  background-color: rgb(4, 170, 109);
+}
